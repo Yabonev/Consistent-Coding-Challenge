@@ -16,4 +16,5 @@ areRotationOfEachOther("123456","234561") -> true
 areRotationOfEachOther("abcd","cdab") -> true
 areRotationOfEachOther("abcd","cdba") -> false
 areRotationOfEachOther("abcd","abracadabra") -> false
+```
 
