@@ -1,3 +1,35 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Поглед върху Обектното-ориентирано програмиране](#%D0%BF%D0%BE%D0%B3%D0%BB%D0%B5%D0%B4-%D0%B2%D1%8A%D1%80%D1%85%D1%83-%D0%BE%D0%B1%D0%B5%D0%BA%D1%82%D0%BD%D0%BE%D1%82%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%B0%D0%BD%D0%BE-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)
+  - [Какво е "програмна парадигма"?](#%D0%BA%D0%B0%D0%BA%D0%B2%D0%BE-%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%B0-%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D0%B0)
+  - [Процедурно програмиране](#%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%BD%D0%BE-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)
+  - [Обектно-ориентирано програмине](#%D0%BE%D0%B1%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%B0%D0%BD%D0%BE-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D0%BD%D0%B5)
+- [Принципи в Обектното-ориентирано програмиране](#%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D0%B8-%D0%B2-%D0%BE%D0%B1%D0%B5%D0%BA%D1%82%D0%BD%D0%BE%D1%82%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%B0%D0%BD%D0%BE-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)
+  - [Енкапсулация](#%D0%B5%D0%BD%D0%BA%D0%B0%D0%BF%D1%81%D1%83%D0%BB%D0%B0%D1%86%D0%B8%D1%8F)
+  - [Абстракция](#%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F)
+  - [Наследяване](#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5)
+  - [Полиморфизъм](#%D0%BF%D0%BE%D0%BB%D0%B8%D0%BC%D0%BE%D1%80%D1%84%D0%B8%D0%B7%D1%8A%D0%BC)
+- [Header files](#header-files)
+- [Структури (Structures)](#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B8-structures)
+  - [Примерна задача със и без структура](#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%B0-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D1%81%D1%8A%D1%81-%D0%B8-%D0%B1%D0%B5%D0%B7-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0)
+  - [Какво е структура](#%D0%BA%D0%B0%D0%BA%D0%B2%D0%BE-%D0%B5-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0)
+  - [Как дефинираме структура](#%D0%BA%D0%B0%D0%BA-%D0%B4%D0%B5%D1%84%D0%B8%D0%BD%D0%B8%D1%80%D0%B0%D0%BC%D0%B5-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0)
+  - [Как използваме структура](#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BC%D0%B5-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0)
+    - [Инициализация на променлива](#%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%BD%D0%BB%D0%B8%D0%B2%D0%B0)
+    - [Структури и функции](#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B8-%D0%B8-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8)
+    - [Оператор точка](#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%82%D0%BE%D1%87%D0%BA%D0%B0)
+    - [Влагане на структури](#%D0%B2%D0%BB%D0%B0%D0%B3%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B8)
+    - [Масиви от структури](#%D0%BC%D0%B0%D1%81%D0%B8%D0%B2%D0%B8-%D0%BE%D1%82-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B8)
+  - [Указатели към структури](#%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B8-%D0%BA%D1%8A%D0%BC-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B8)
+      - [Оператор ->](#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80--)
+  - [Задачи за упражнение](#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-%D0%B7%D0%B0-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
+    - [Задача 1](#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-1)
+    - [Задача 2](#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Поглед върху Обектното-ориентирано програмиране
 
 ## Какво е "програмна парадигма"?
