@@ -99,7 +99,9 @@
 >**Object**: Finally, it was time to have some fun, and create some instances of the classes made. And viola, God created Adam, Eve, Chunnu, Munnu, Raveena, Sunny, Mari, Salman, John, Samuel, Anoushka, Rama and many many more. And that's how this OOPS programmer created Human Life.
 
 # Header files
-ТО DO
+[Този клип](https://www.youtube.com/watch?v=9RJTQmK0YPI) обяснява това, което разказа Яската. Можем да научим доста за C++ от канала на [The Cherno](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb).
+
+---
 
 # Структури (Structures)
 
